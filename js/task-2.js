@@ -1,5 +1,5 @@
 function formatMessage(message, maxLength) {
-    const messageString = maxLength.length;
+    const messageString = message.length;
     if (messageString <= maxLength) {
         return message;
     } else {
@@ -13,3 +13,4 @@ console.log(formatMessage("Vestibulum facilisis purus nec", 20)); // "Vestibulum
 console.log(formatMessage("Vestibulum facilisis purus nec", 30)); // "Vestibulum facilisis purus nec"
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15)); // "Nunc sed turpis..."
 console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41)); // "Nunc sed turpis a felis in nunc fringilla"
+
